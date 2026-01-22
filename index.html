@@ -1,129 +1,188 @@
 <!doctype html>
 <html lang="sv">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Start – Svenska Bolagsbutiken</title>
-  <meta name="description" content="Köp ett färdigt aktiebolag (AB) på ett enkelt och tydligt sätt. Svenska Bolagsbutiken."/>
-  <link rel="stylesheet" href="assets/style.css"/>
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Svenska Bolagsbutiken – Köp ett färdigt aktiebolag</title>
+  <meta name="description" content="Köp ett färdigt aktiebolag (AB) snabbt och tryggt. Tydlig process, fast pris och personlig hjälp." />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-
-<div class="topbar">
   <div class="container">
-    <div class="nav">
-      <div class="brand">Svenska Bolagsbutiken</div>
-      <nav class="menu">
-        <a href="index.html" style="background:#f6f6f6">Start</a>
-        <a href="kop-aktiebolag.html" >Köp aktiebolag</a>
-        <a href="faq.html" >FAQ</a>
-        <a href="#kontakt">Kontakt</a>
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand__name">Svenska Bolagsbutiken</div>
+        <div class="brand__tagline">Färdigt aktiebolag – snabbt & tryggt</div>
+      </div>
+
+      <nav class="nav" aria-label="Huvudmeny">
+        <a href="#start">Start</a>
+        <a href="#sa-funkar-det">Så funkar det</a>
+        <a href="#vad-ingar">Det ingår</a>
+        <a href="#pris">Pris</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav__cta" href="#kontakt">Kontakt</a>
       </nav>
-    </div>
-  </div>
-</div>
+    </header>
 
+    <section class="hero" id="start">
+      <div class="hero__left">
+        <h1>Köp ett färdigt aktiebolag</h1>
+        <p class="lead">
+          En enkel väg till ditt eget bolag. Du fyller i dina uppgifter – vi återkommer så snart vi kan med nästa steg.
+        </p>
 
-<main>
-  <div class="container">
-    <section class="hero">
-      <div class="grid two">
-        <div>
-          <div class="kicker">Färdigt bolag</div>
-          <h1 class="h1">Köp ett färdigt aktiebolag</h1>
-          <p class="lead">En enkel väg till <strong>ditt eget bolag</strong>. Du fyller i dina uppgifter och väljer betalning – vi återkommer så snart vi kan med nästa steg.</p>
-          <div class="cta-row">
-            <a class="btn" href="kop-aktiebolag.html">Starta beställning</a>
-            <a class="btn secondary" href="faq.html">Läs FAQ</a>
-            <span class="badge">Svenska privatpersoner & svenska företag</span>
-          </div>
-          <p class="note">Sökord som sidan naturligt täcker: köpa bolag, köpa aktiebolag, starta eget bolag, färdigt bolag.</p>
+        <div class="cta-row">
+          <a class="button primary" href="#kontakt">Starta beställning</a>
+          <a class="button ghost" href="#faq">Läs FAQ</a>
         </div>
-        <div class="card">
-          <img src="assets/illustration.svg" alt="Illustration" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--border)"/>
-          <div class="mini muted" style="margin-top:8px">Byt ut illustrationerna senare. Detta är en plats­hållare.</div>
+
+        <div class="badges" aria-label="Trygghetsmarkörer">
+          <span class="badge">Svenskt AB</span>
+          <span class="badge">Tydlig process</span>
+          <span class="badge">Fast pris</span>
+          <span class="badge">Personlig hjälp</span>
+        </div>
+      </div>
+
+      <div class="hero__right" role="img" aria-label="Illustration (plats hållare)">
+        <div class="placeholder">
+          <div class="placeholder__title">Illustration</div>
+          <div class="placeholder__text">Byt ut mot bild senare (valfritt).</div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2 class="h2">Så fungerar det</h2>
-      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
-        <div class="card"><strong>1.</strong> Du startar en beställning</div>
-        <div class="card"><strong>2.</strong> Du lämnar dina uppgifter</div>
-        <div class="card"><strong>3.</strong> Vi återkommer så snart vi kan med nästa steg</div>
-      </div>
-    </section>
+    <section class="grid">
+      <main class="card">
 
-    <section class="section">
-      <h2 class="h2">Det här ingår</h2>
-      <div class="grid two">
-        <div class="card">
-          <ul class="ul">
+        <section class="section" id="sa-funkar-det">
+          <h2>Så fungerar det</h2>
+          <ol class="steps">
+            <li>Du startar en beställning</li>
+            <li>Du lämnar dina uppgifter</li>
+            <li>Vi återkommer så snart vi kan med nästa steg</li>
+          </ol>
+        </section>
+
+        <section class="section" id="vad-ingar">
+          <h2>Det här ingår</h2>
+          <ul class="list">
             <li>Svenskt aktiebolag (AB)</li>
             <li>Organisationsnummer</li>
             <li>Ägarbyte till dig</li>
             <li>Ny styrelse och VD enligt dina uppgifter</li>
           </ul>
+          <p class="muted">
+            (Texten ovan är en bra start. Vi kan göra den ännu tydligare när du vill.)
+          </p>
+        </section>
+
+        <section class="section" id="nar-passar-det">
+          <h2>När passar det att köpa ett aktiebolag?</h2>
+          <p>
+            Att köpa ett färdigt bolag passar dig som vill:
+          </p>
+          <ul class="list">
+            <li>komma igång snabbt</li>
+            <li>slippa vänta på registrering</li>
+            <li>starta eget utan krångel</li>
+          </ul>
+          <p class="muted">
+            Många väljer att köpa aktiebolag istället för att börja helt från början.
+          </p>
+        </section>
+
+      </main>
+
+      <aside class="card side" id="pris">
+        <div class="side__header">
+          <h2>Pris</h2>
+          <div class="price">
+            <div class="price__value">36 550 kr</div>
+            <div class="price__sub">Totalt. Inkl. aktiekapital, arvoden och registreringsavgifter.</div>
+          </div>
         </div>
-        <div class="card">
-          <img src="assets/illustration.svg" alt="Illustration" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--border)"/>
+
+        <div class="divider"></div>
+
+        <div class="side__cta">
+          <a class="button primary full" href="#kontakt">Starta beställning</a>
+          <a class="button ghost full" href="#faq">Vanliga frågor</a>
         </div>
-      </div>
+
+        <div class="divider"></div>
+
+        <div class="trust">
+          <div class="trust__row">
+            <span class="dot"></span>
+            <span>Du får en tydlig process</span>
+          </div>
+          <div class="trust__row">
+            <span class="dot"></span>
+            <span>Fast pris – inga överraskningar</span>
+          </div>
+          <div class="trust__row">
+            <span class="dot"></span>
+            <span>Personlig hjälp via kontakt</span>
+          </div>
+        </div>
+      </aside>
     </section>
 
-    <section class="section">
-      <h2 class="h2">När passar det att köpa ett aktiebolag?</h2>
-      <div class="card">
-        <p style="margin:0 0 8px 0">Att <strong>köpa ett färdigt bolag</strong> passar dig som vill:</p>
-        <ul class="ul">
-          <li>komma igång snabbt</li>
-          <li>slippa vänta på registrering</li>
-          <li>starta <strong>eget bolag</strong> utan krångel</li>
-        </ul>
-        <p class="mini muted" style="margin:10px 0 0 0">Många väljer att köpa aktiebolag istället för att börja helt från början.</p>
-      </div>
+    <section class="card section" id="faq">
+      <h2>Vanliga frågor (FAQ)</h2>
+
+      <details class="qa">
+        <summary>Hur lång tid tar det?</summary>
+        <p class="muted">Skriv ditt svar här. (Ex: vi återkommer inom 24 timmar på vardagar.)</p>
+      </details>
+
+      <details class="qa">
+        <summary>Ingår aktiekapital?</summary>
+        <p class="muted">Skriv ditt svar här.</p>
+      </details>
+
+      <details class="qa">
+        <summary>Hur gör jag för att komma igång?</summary>
+        <p class="muted">Skriv ditt svar här. (Ex: Klicka “Starta beställning” och fyll i uppgifter.)</p>
+      </details>
     </section>
 
-    <section class="section">
-      <h2 class="h2">Pris</h2>
-      <div class="card">
-        <div class="price">Totalt: 36 550 kr</div>
-        <div class="mini muted">Totalkostnaden består av aktiekapital, arvoden och registreringsavgifter.</div>
-        <div class="hr"></div>
-        <details>
-          <summary>Visa prisuppdelning</summary>
-          <table>
-            <tbody>
-              <tr><td>Aktiekapital</td><td>25 000 kr</td></tr>
-              <tr><td>Arvoden</td><td>5 400 kr</td></tr>
-              <tr><td>Moms på arvoden</td><td>1 350 kr</td></tr>
-              <tr><td>Registreringsavgifter</td><td>4 800 kr</td></tr>
-            </tbody>
-            <tfoot>
-              <tr><td>Totalt</td><td>36 550 kr</td></tr>
-            </tfoot>
-          </table>
-          <div class="mini muted">Aktiekapitalet sätts in i bolaget.</div>
-        </details>
-        <div class="actions">
-          <a class="btn" href="kop-aktiebolag.html">Köp aktiebolag</a>
-          <a class="btn secondary" href="faq.html">Vanliga frågor</a>
+    <section class="card section" id="kontakt">
+      <h2>Kontakt</h2>
+      <p class="muted">
+        Lägg kontaktuppgifter här. Exempel:
+      </p>
+
+      <div class="contact">
+        <div class="contact__item">
+          <div class="contact__label">E-post</div>
+          <div class="contact__value"><a href="mailto:kontakt@exempel.se">kontakt@exempel.se</a></div>
+        </div>
+
+        <div class="contact__item">
+          <div class="contact__label">Telefon</div>
+          <div class="contact__value"><a href="tel:+46700000000">+46 70 000 00 00</a></div>
         </div>
       </div>
+
+      <p class="muted small">
+        (Vi kan byta ut exempel-adresserna när du vill.)
+      </p>
     </section>
+
+    <footer class="footer">
+      <div>© 2026 Svenska Bolagsbutiken</div>
+      <div class="footer__links">
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </footer>
+
   </div>
-</main>
-
-<footer class="footer" id="kontakt">
-  <div class="container">
-    <div class="hr"></div>
-    <div><strong>Svenska Bolagsbutiken</strong></div>
-    <div class="mini">Kontakt: <a href="mailto:kontakt@exempel.se">kontakt@exempel.se</a> (byt till er riktiga e‑post)</div>
-    <div class="mini muted">© 2026 Svenska Bolagsbutiken</div>
-  </div>
-</footer>
 </body>
 </html>
